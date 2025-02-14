@@ -1,0 +1,23 @@
+**Run on a linux machine with gfortran installed**
+* all code is from https://drive.google.com/drive/folders/1pXhNe33Awg1MI1hoLeDgn6OJEufghiQ-?usp=share_link
+
+
+Compile the Fortran Source Files:
+`gfortran -c Time_Module.f90 get_elem.f90 ephemeris.f90`
+
+Link to create executable for orbital elements:
+`gfortran Time_Module.o get_elem.o -o get_elem`
+
+Run orbital elements executable:
+`./get_elem`
+* Outputs a `ORB_ELM.DAT` file
+
+Link to create executable for satellite positions:
+`gfortran Time_Module.o ephemeris.o -o ephemeris`
+
+Run satellite position executable:
+`./ephemeris`
+* Outputs a `EPHEMERIS.DAT` file
+
+Run python to create figure:
+`python ephemeris_plot.py`

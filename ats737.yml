@@ -3,6 +3,8 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - cartopy=0.24.0
-  - cfgrib=0.9.15.0
+  - pandas=2.2.3
+  - cartopy=0.22.0
+  - matplotlib=3.10.0
+  - numpy=1.26.4
 prefix: /Applications/anaconda3/envs/ats737
