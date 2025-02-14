@@ -1,0 +1,8 @@
+name: ats737
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cartopy=0.24.0
+  - cfgrib=0.9.15.0
+prefix: /Applications/anaconda3/envs/ats737
