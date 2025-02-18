@@ -45,7 +45,7 @@ PROGRAM Track
    PRINT *
 
    ! Get observing point latitude and longitude
-   PRINT '("Enter observing point latitude (-90 to 90) and longitude (-180 to 180) >"\)'
+   PRINT '("Enter observing point latitude (-90 to 90) and longitude (-180 to 180) >")'
    READ *, lat0, lon0
 !   PRINT *, "Latitude  = ", lat0
 !   PRINT *, "Longitude = ", lon0

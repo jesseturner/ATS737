@@ -1,6 +1,7 @@
 **Run on a linux machine with gfortran installed**
 * all code is from https://drive.google.com/drive/folders/1pXhNe33Awg1MI1hoLeDgn6OJEufghiQ-?usp=share_link
 
+---Getting the ground track:---
 
 Compile the Fortran Source Files:
 `gfortran -c Time_Module.f90 get_elem.f90 ephemeris.f90`
@@ -21,3 +22,15 @@ Run satellite position executable:
 
 Run python to create figure:
 `python ephemeris_plot.py`
+
+---Getting the elevation and azimuth angles (requires the above):---
+
+Compile and link the Fortran Source Files:
+`gfortran -c Time_Module.f90 Track_new.f90`
+`gfortran Time_Module.o Track_new.o -o Track_new`
+
+Run satellite tracking executable:
+`./Track_new`
+
+Run python to create figure:
+`python track_new_plot.py`
