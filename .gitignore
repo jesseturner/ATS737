@@ -1,6 +1,8 @@
 *.o
 *.mod
 *.DAT
-ephemeris
-get_elem
+1.orbital_calculations/ephemeris
+1.orbital_calculations/get_elem
 *.png
+1.orbital_calculations/Track.txt
+1.orbital_calculations/Track_new

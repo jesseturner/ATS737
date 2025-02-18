@@ -1,5 +1,6 @@
 **Run on a linux machine with gfortran installed**
 * all code is from https://drive.google.com/drive/folders/1pXhNe33Awg1MI1hoLeDgn6OJEufghiQ-?usp=share_link
+* use ats737 conda env for python code
 
 ---Getting the ground track:---
 
@@ -24,13 +25,14 @@ Run python to create figure:
 `python ephemeris_plot.py`
 
 ---Getting the elevation and azimuth angles (requires the above):---
+---Using "Track_new.f90" from Google Drive---
 
 Compile and link the Fortran Source Files:
-`gfortran -c Time_Module.f90 Track_new.f90`
-`gfortran Time_Module.o Track_new.o -o Track_new`
+`gfortran -c Time_Module.f90 Track.f90`
+`gfortran Time_Module.o Track.o -o Track`
 
 Run satellite tracking executable:
-`./Track_new`
+`./Track`
 
 Run python to create figure:
-`python track_new_plot.py`
+`python track_plot.py`
