@@ -7,4 +7,5 @@ dependencies:
   - cartopy=0.22.0
   - matplotlib=3.10.0
   - numpy=1.26.4
+  - nbconvert=7.16.4 
 prefix: /Applications/anaconda3/envs/ats737
